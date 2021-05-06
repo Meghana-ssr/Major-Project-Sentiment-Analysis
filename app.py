@@ -66,4 +66,5 @@ ip = lemmatize_word(ip)
 ip = remove_stopwords(ip)
 op = model.predict([ip])
 if st.button("Predict"):
+  st.write("The Given Message Is :- ")
   st.title(op[0]) 
