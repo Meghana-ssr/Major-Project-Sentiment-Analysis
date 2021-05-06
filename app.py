@@ -54,7 +54,7 @@ def remove_numbers(text):
     result = re.sub(r'\d+', '', text)
     return result
 
-model = joblib.load('Email_model')
+model = joblib.load('SentimentAnalysis_model')
 st.title('Sentiment Analyzer')
 ip = st.text_input("Enter The Message")
 ip = lower(ip)
